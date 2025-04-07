@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un nouveau membre à l'équipe</title>
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    
+</head>
+<body id="page-top">
+<div id="wrapper">
+    <%@ include file="sidebar.jsp" %>
+    
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <%@ include file="header.jsp" %>
+            <div class="container-fluid">
+            
+                <div class="row justify-content-center">
+
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        <!-- Nested Row within Card Body -->
+                        <div class="row">
+                            
+                            <div class="col-lg-12">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h1 class="h4 text-gray-900 mb-4">Renseignez les informations de la noyade</h1>
+                                    </div>
+                                    <form class="user" action = "Login" method = "post">
+                                        <div class="form-group">
+                                            <input type="number" class="form-control form-control-user"
+                                                placeholder="Entrez votre ID" name = "id_pers">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user" placeholder="Entrez votre mot de passe" name = "password">
+                                        </div>
+                                        <input type ="submit" value= "Login" class= "btn btn-primary btn-user btn-block">
+                                        </form>
+                                        
+                                        <c:if test = "${bool != null && bool == false }">
+											<p class="error_message"> 
+											<br>
+											Vos informations sont erronées.
+											<br>
+											 Veuillez les saisir à nouveau correctement 
+											 </p>
+											
+											</c:if>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/sb-admin-2.min.js"></script>
+</body>
+</html>
