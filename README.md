@@ -5,6 +5,10 @@ plages. Cette application permet de traiter les alertes de noyade reçues par
 des drônes de surveillance ou par des maitres-nageurs, et de les transmettre
 aux équipes de sauvetage pour une intervention rapide.
 
+<video src="https://github.com/user-attachments/assets/40c01716-d4aa-459d-887e-8b76422fde6c" controls width="600">
+  Your browser does not support the video tag.
+</video>
+
 ## Quelques Interfaces:
 
 ### Page d'accueil
